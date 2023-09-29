@@ -1,6 +1,6 @@
 #! python3
 # this file allows you to test how boolean variables and conditional statements work
-
+x = 5
 
 # How to do an IF statement Example 1:
 # Demonstrates how an if statement makes decisions
@@ -10,12 +10,12 @@
 print("=============================")
 print("     Ex1: If statement       ")
 print("=============================")
-if True:
+if x <= 10:
   print("the condition is True")
   print("Any code in this block is executed")
 print("=============================\n\n\n")
 
-
+exit()
 
 
 # How to do an IF statement Example 2:

@@ -31,3 +31,15 @@ Enter a number: 10000
 
 
 """
+
+Num = int(input('Enter a number -->'))
+if Num>=1000:
+    print('3')
+elif 100<=Num<1000:
+    print('2')
+elif 10<=Num<100:
+    print('1')
+elif 0<=Num<10:
+    print('0')
+elif Num<0:
+    print('-1')

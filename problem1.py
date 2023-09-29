@@ -11,3 +11,9 @@
 # Outputs:
 # "the number is even"
 # "the number is odd"
+Num = int(input('Enter an integer.'))
+y = Num%2
+if y==0:
+    print(f'{Num} is even.')
+if y!=0:
+    print(f'{Num} is odd.')

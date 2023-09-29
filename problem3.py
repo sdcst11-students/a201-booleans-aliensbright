@@ -23,3 +23,8 @@
  Enter password: password
  Access denied
 """
+user = input('Enter your username.')
+if user=="Admin":
+    print(user)
+else:
+    print('ghfjds')
