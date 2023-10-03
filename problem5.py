@@ -29,3 +29,17 @@ Enter c: 8
 the equation can not be factored
 
 """
+print('I will solve a quadratic equation in the form of ax^2 + bx + c = 0 for you.')
+a=float(input('Enter a:'))
+b=float(input('Enter b:'))
+c=float(input('Enter c:'))
+disc=b**2 - 4 * a * c
+if disc>=0:
+    a=(disc**0.5)%1
+    if a==0:
+        print('The equation can be factored')
+    else:
+        print("The equation cannot be factored")
+    print('There is a solution')
+else:
+    print('The discriminant is negative.\nThere are no solutions.')

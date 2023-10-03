@@ -33,3 +33,31 @@ that is an obtuse triangle
 
 
 """
+a=float(input('Enter one side:'))
+b=float(input('Enter a second side:'))
+c=float(input('Enter third side:'))
+if a>=b:
+    if a>=c:
+        largest=a
+        small1=b
+        small2=c
+    else:
+        largest=c
+        small1=a
+        small2=b
+elif b>=c:
+    largest=b
+    small1=a
+    small2=c
+else:
+    largest=c
+    small1=a
+    small2=b
+hyp=(small1**2+small2**2)**0.5
+percdiff=(hyp-largest)*2/(hyp+largest)*100
+if 2>=percdiff>=-2:
+    print('That is a right triangle.')
+elif percdiff>2:
+    print('That is an acute triangle.')
+elif percdiff<-2:
+    print('That is an obtuse triangle.')

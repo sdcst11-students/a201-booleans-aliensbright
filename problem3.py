@@ -23,8 +23,13 @@
  Enter password: password
  Access denied
 """
-user = input('Enter your username.')
-if user=="Admin":
-    print(user)
+user = input('Enter your username:')
+if user=="admin":
+    password = input('Enter password:')
+    if password=="12345password":
+        print('Access granted.')
+    else:
+        print('Access denied.')
 else:
-    print('ghfjds')
+    print('Invalid user \nAccess denied.')
+exit()
